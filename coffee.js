@@ -12,7 +12,7 @@ const gambar = [
   
   // Array pesan untuk balon percakapan
   const pesan = [
-    "Selamat Tahun baru Rafa-kun!",
+    "Selamat Tahun baru!",
     "Heeeh? Kenapa kau? kok badmood kali kutengok?",
     "Oooh gitu...",
     "Bentar lagi mau tamat, jadi wajar lah memikirkan masa depan",

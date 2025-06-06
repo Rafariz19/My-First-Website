@@ -1,0 +1,64 @@
+*,
+
+/* Mengatur tampilan body */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('gambar1.jpg'); /* Gambar awal */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out; /* Efek transisi background */
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  color: rgb(0, 0, 0);
+  overflow: hidden; /* Agar tidak ada scroll */
+}
+
+/* Gaya untuk balon percakapan */
+.balon-pesan {
+  position: absolute;
+  width: 600px;
+  height: 100px;
+  top: 50px;
+  left: 130px;
+  background-color: rgba(255, 255, 255, 0.7); /* Warna balon transparan */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Segitiga kecil di bawah balon */
+.balon-pesan::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(0, 0, 0, 0.7);
+}
+
+/* Gaya tombol */
+button {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  top: 160px;
+  left: 130px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
